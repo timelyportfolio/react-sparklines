@@ -9,6 +9,7 @@ browsable(attachDependencies(
 "
 var Sparklines = ReactSparklines.Sparklines;
 var SparklinesLine = ReactSparklines.SparklinesLine;
+var SparklinesReferenceLine = ReactSparklines.SparklinesReferenceLine;
 
 ReactDOM.render(
   <Sparklines data={[1,2,3,4,5]}>
@@ -20,6 +21,7 @@ ReactDOM.render(
 ReactDOM.render(
   <Sparklines data={%s}>
     <SparklinesLine />
+    <SparklinesReferenceLine type='max' />
   </Sparklines>,
   document.getElementById('sparkline2')
 );
